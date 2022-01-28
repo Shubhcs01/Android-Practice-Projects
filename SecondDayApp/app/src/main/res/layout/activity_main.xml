@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvquest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What you want on your burger?"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvquest">
+
+        <RadioButton
+            android:id="@+id/rBeef"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Beef" />
+
+        <RadioButton
+            android:id="@+id/rChicken"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chicken" />
+
+        <RadioButton
+            android:id="@+id/rPork"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pork" />
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/cbCheese"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cheese"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rg" />
+
+    <CheckBox
+        android:id="@+id/cbOnion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Onions"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbCheese" />
+
+    <CheckBox
+        android:id="@+id/cbSalad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Salad"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbOnion" />
+
+    <Button
+        android:id="@+id/btnOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ORDER"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbSalad" />
+
+    <TextView
+        android:id="@+id/tvOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="Your Order:"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnOrder" />
+
+    <ImageView
+        android:id="@+id/ivfood"
+        android:layout_width="286dp"
+        android:layout_height="140dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnOrder"
+        app:layout_constraintVertical_bias="0.817"
+        app:srcCompat="@drawable/food" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

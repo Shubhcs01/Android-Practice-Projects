@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<resources>
+
+    <string name="app_name">Weather App</string>
+
+    <string name="please_wait">Please Wait…</string>
+
+    <!--TODO (STEP 4: All the string values are added here.)-->
+
+
+    <!--START-->
+
+
+    <string name="image_contentDescription">image</string>
+
+    <string name="miles_per_hour">miles/hour</string>
+
+    <!--END-->
+
+
+</resources>
